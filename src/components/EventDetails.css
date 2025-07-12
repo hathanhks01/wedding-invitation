@@ -1,0 +1,202 @@
+.event-details {
+  padding: 100px 0;
+  background: white;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.event-card {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  border-color: #e74c3c;
+}
+
+.event-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.event-card h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.event-info {
+  margin-bottom: 20px;
+}
+
+.event-time {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event-location {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.event-address {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.event-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.countdown-section {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.countdown-section h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  text-align: center;
+  min-width: 100px;
+}
+
+.countdown-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.dress-code {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.dress-code h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.dress-code-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.dress-code-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dress-code-item h4 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.gift-info {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gift-info h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.gift-info p {
+  text-align: center;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.bank-info {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.bank-info h4 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.bank-info p {
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .event-card {
+    padding: 30px 20px;
+  }
+  
+  .countdown-timer {
+    gap: 20px;
+  }
+  
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+  
+  .dress-code-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .countdown-section,
+  .dress-code,
+  .gift-info {
+    padding: 30px 20px;
+  }
+} 
